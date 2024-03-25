@@ -8,7 +8,6 @@ const LandingPage: NextPage = () => {
   return (
     <>
       <TitleAndDropdown />
-      <MarketingSection />
     </>
   );
 };
