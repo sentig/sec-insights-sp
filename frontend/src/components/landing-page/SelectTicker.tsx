@@ -59,6 +59,7 @@ export const DocumentSelectCombobox: React.FC<DocumentSelectComboboxProps> = ({
     setInputValue,
   } = useCombobox({
     onInputValueChange({ inputValue }) {
+      console.log('Filtering with:', inputValue);
       if (inputValue) {
         setFilteredDocuments(
           availableDocuments.filter(getTickerFilter(inputValue))
