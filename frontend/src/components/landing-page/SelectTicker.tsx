@@ -47,6 +47,7 @@ export const DocumentSelectCombobox: React.FC<DocumentSelectComboboxProps> = ({
     useState<Ticker[]>(availableDocuments);
 
   useEffect(() => {
+    console.log('Available Documents:', availableDocuments);
     setFilteredDocuments(availableDocuments);
   }, [availableDocuments]);
 
